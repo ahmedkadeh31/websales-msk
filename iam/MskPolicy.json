@@ -1,0 +1,37 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kafka-cluster:Connect",
+                "kafka-cluster:AlterCluster",
+                "kafka-cluster:DescribeCluster"
+            ],
+            "Resource": [
+                "arn:aws:kafka:[REGION]:[ACCOUNT_ID]:cluster/[CLUSTER_NAME]/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kafka-cluster:*Topic*",
+                "kafka-cluster:WriteData",
+                "kafka-cluster:ReadData"
+            ],
+            "Resource": [
+                "arn:aws:kafka:[REGION]:[ACCOUNT_ID]:topic/[CLUSTER_NAME]/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kafka-cluster:AlterGroup",
+                "kafka-cluster:DescribeGroup"
+            ],
+            "Resource": [
+                "arn:aws:kafka:[REGION]:[ACCOUNT_ID]:group/[CLUSTER_NAME]/*"
+            ]
+        }
+    ]
+}
