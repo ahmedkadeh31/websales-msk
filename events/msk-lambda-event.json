@@ -1,0 +1,23 @@
+{
+    "eventSource": "aws:kafka",
+    "eventSourceArn": "arn:aws:kafka:sa-east-1:123456789012:cluster/vpc-2priv-2pub/751d2973-a626-431c-9d4e-d7975eb44dd7-2",
+    "records": {
+      "mytopic-0": [
+        {
+          "topic": "mytopic",
+          "partition": 0,
+          "offset": 15,
+          "timestamp": 1545084650987,
+          "timestampType": "CREATE_TIME",
+          "value": "eyJPcmRlcklkIjoiTlQ1YTZqM0QiLCJPcmRlckRhdGUiOiIyMDIyLTA2LTA1IDE0OjMwOjQ4WiIsIkN1c3RvbWVyRW1haWwiOiJKb3NlcGhfTW9vcmU5NDI5QGtpZGVvZC5iaXoiLCJDdXN0b21lckZpcnN0TmFtZSI6Ikpvc2VwaCIsIkN1c3RvbWVyTGFzdE5hbWUiOiJNb29yZSIsIkl0ZW1zUXVhbnRpdHkiOjIzLCJPcmRlcnNBbW91bnQiOiI3NzUsMTU0LDQ2OFNrIiwiQ3VzdG9tZXJQaG9uZSI6IjAtMzUxLTU4OC0xODIzIiwiU2hpcHBpbmdTdHJlZXQiOiJCdXNoICBSb2FkLCAyMzU1IiwiU2hpcHBpbmdDaXR5IjoiT3Rhd2EiLCJTaGlwcGluZ0NvdW50cnkiOiJWYW51YXR1In0=",
+          "headers": [
+            {
+              "headerKey": [
+                104
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
